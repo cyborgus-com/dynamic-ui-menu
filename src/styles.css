@@ -1,3 +1,9 @@
 body {
     background-color: blanchedalmond;
 }
+
+body > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
