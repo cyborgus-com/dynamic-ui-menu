@@ -10,5 +10,10 @@ function menuAnimation(el) {
 }
 
 function openMenu(el) {
-  el.classList.toggle("menu_visible");
+  // https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+  const burger = el.querySelector(".container");
+
+  if (!burger) return;
+  const isHidden = window.getComputedStyle(burger).display === "none";
+  burger.style.display = isHidden ? "block" : "none";
 }
